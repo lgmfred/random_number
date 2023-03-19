@@ -1,0 +1,5 @@
+<%!-- <h2>The random number is: <%= @random_number %> </h2> --%>
+<h1>The random number is: <%= @random_number %></h1>
+<%= form_for @conn, "/random_number", fn _f -> %>
+  <%= submit "Generate" %>
+<% end %>
